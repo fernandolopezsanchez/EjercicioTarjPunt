@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+
+.bloque {
+    text-align: center;
+}
+
+.subBloque {
+  background-color: gray;
+  padding: 10px;
+  margin: 10px; 
+  display: inline-block;
+}

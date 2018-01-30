@@ -1,8 +1,16 @@
 package com.tarjeta.dto;
 
+import javax.validation.constraints.NotEmpty;
+
+import org.hibernate.validator.constraints.Length;
+
+
 public class Usuario {
 	
+	
+	@NotEmpty//(message="{notempty.login.nombre}")	
 	private String login;
+	@Length(min=8)
 	private String password;
 	
 	

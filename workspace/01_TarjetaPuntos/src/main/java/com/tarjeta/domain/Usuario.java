@@ -2,7 +2,7 @@ package com.tarjeta.domain;
 
 public class Usuario {
 	
-	private int idUsuario;
+	private int idUsuario; //PK
 	private String login;
 	private String password;
 	
@@ -10,6 +10,7 @@ public class Usuario {
 	public int getIdUsuario() {
 		return idUsuario;
 	}
+	
 	public void setIdUsuario(int idUsuario) {
 		this.idUsuario = idUsuario;
 	}

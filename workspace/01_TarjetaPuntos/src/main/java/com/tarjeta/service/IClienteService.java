@@ -6,6 +6,6 @@ public interface IClienteService {
 
 	public abstract void insertCliente(Cliente cliente);
 	
-	public void findPuntoByCliente(String login);
+	public Cliente findPuntoByCliente(String login);
 	
 }

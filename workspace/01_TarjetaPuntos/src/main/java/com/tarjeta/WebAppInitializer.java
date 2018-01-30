@@ -13,7 +13,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
 	public void onStartup(ServletContext servletContext) throws ServletException {
 		AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
 
-		webApplicationContext.setConfigLocation("com.tarjeta.mvc.config");
+		webApplicationContext.setConfigLocation("com.tarjeta.config");
 
 		Dynamic servlet = servletContext.addServlet("dispatcherServlet", new DispatcherServlet(webApplicationContext));
 

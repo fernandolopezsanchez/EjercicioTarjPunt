@@ -1,9 +1,16 @@
 package com.tarjeta.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.tarjeta.domain.Cliente;
+import com.tarjeta.persistence.ClienteDao;
+import com.tarjeta.persistence.UsuarioDao;
 
 public class ClienteService implements IClienteService{
 
+	
+	@Autowired
+	private ClienteDao clienteDao;
 	
 	
 	@Override
@@ -13,8 +20,9 @@ public class ClienteService implements IClienteService{
 	}
 
 	@Override
-	public void findPuntoByCliente(String login) {
+	public Cliente findPuntoByCliente(String login) {
 		// TODO Auto-generated method stub
+		return null;
 		
 	}
 

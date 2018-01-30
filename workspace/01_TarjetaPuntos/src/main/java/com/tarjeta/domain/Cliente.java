@@ -2,9 +2,9 @@ package com.tarjeta.domain;
 
 public class Cliente extends Usuario{
 	
-	private int idCliente;
-	private int idUsuario;
-	private int puntos;
+	private int idCliente; //PK
+	private int idUsuario; //FK
+	private long puntos;
 	private String apellidos;
 	
 	
@@ -20,10 +20,10 @@ public class Cliente extends Usuario{
 	public void setIdUsuario(int idUsuario) {
 		this.idUsuario = idUsuario;
 	}
-	public int getPuntos() {
+	public long getPuntos() {
 		return puntos;
 	}
-	public void setPuntos(int puntos) {
+	public void setPuntos(long puntos) {
 		this.puntos = puntos;
 	}
 	public String getApellidos() {
